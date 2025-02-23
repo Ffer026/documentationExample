@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 
-//Hola
+
+
+//Adiós
+
 public class Pile {
     private ArrayList<Card> cards;
 
