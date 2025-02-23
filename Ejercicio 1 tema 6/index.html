@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="contenedor.js"></script>
+    <script src="events.js"></script>
+    <script src="puerto.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body>
+    <form id="agregarContenedor">
+        <h1>Añadir contenedores</h1>
+
+        <fieldset>
+            <legend>Nuevo contenedor</legend>
+            <label for="id">ID:</label>
+            <input type="text" name="id" id="id" required>
+
+            <label for="peso">Peso en toneladas:</label>
+            <input type="number" name="peso" id="peso" required>
+
+            <label for="contenido">Contenido:</label>
+            <input type="text" name="contenido" id="contenido" required>
+
+            <label for="destino">Destino:</label>
+            <select id="destino" name="destino">
+                <option value="europa">Europa</option>
+                <option value="usa">USA</option>
+                <option value="oriente">Oriente</option>
+                <option value="africa">Africa</option>
+            </select>
+        
+            <button type="submit">Agregar</button>
+        </fieldset>
+    </form>
+    <table>
+        <tr name="tableHeader" id="tableHeader">
+            <th>ID</th>
+            <th>Peso</th>
+            <th>Contenido</th>
+            <th>Destino</th>
+            <th>Eliminar</th>
+        </tr>
+
+    </table>
+</body>
+</html>
